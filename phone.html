@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+     <meta charset="UTF-8">
+     <title>行動電話使用意見調查表</title>
+</head>
+<body> 
+    <<h1>行動電話使用意見調查表</h1>
+
+    <form>
+
+        <label for="name">姓名:</label>
+        <input type="text" id="name" name="name" placeholder=""><br><br>
+
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" placeholder="username@mailserver"><br><br>
+
+        <label>您使用手檢時最常碰到問題?</label><br>
+        <textarea name= "problem" rows="4" cols="50"></textarea><br><br>
+        
+        <label>您使用過哪家業者的門號?(可複選)</label><br>
+        <input type="checkbox" id="cht" name="provider" value="中部電信”>
+        <label for="cht">中華電信</label><br>
+
+        <input type="checkbox" id="tum" name="provider" value="台灣大哥大”>
+        <label for="tum">台灣大哥大</label><br>
+
+        <input type="checkbox" id="fet" name="provider" value="遗像”>
+        <label for="fet”></label><br>
+        
+        <input type="checkbox" id="tstart" name="provider" value="台灣之星”>
+        <label for="tstart">台灣之星</label><br><br>
+
+        <input type="submit" value="提交”>
+        <input type="reset" value="重設”>
+    </form>
+    <footer><strong>LG</strong></footer>
+</body>
+</html>
