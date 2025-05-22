@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>作業：顯示分數表</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      margin: 20px auto;
+      font-family: 'Arial', sans-serif;
+      width: 60%;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+
+<script>
+let scores = [
+  ['王小明', 80, 70, 90],
+  ['陳美麗', 85, 95, 88],
+  ['林志玲', 66, 77, 88]
+];
+
+document.write('資料筆數：' + scores.length + '<br><br>');
+
+document.write('<table>');
+document.write('<tr><th>姓名</th><th>國文</th><th>英文</th><th>數學</th></tr>');
+
+for (let i = 0; i < scores.length; i++) {
+  document.write('<tr>');
+  for (let j = 0; j < scores[i].length; j++) {
+    document.write('<td>' + scores[i][j] + '</td>');
+  }
+  document.write('</tr>');
+}
+
+document.write('</table>');
+</script>
+
+</body>
+</html>
